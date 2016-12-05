@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+	    <div id="box">
+	        <audio src="b.mp3" id="audio"></audio>
+            <audio src="zhongsheng.mp3" id="audio1"></audio>
+            <div class="zhongjian">
+                <div class="zhezhao_L"></div>
+                <div class="zhezhao_R"></div>
+                <div class="zhi"></div>
+                
+                <canvas id="canvas" width="600" height="600" class="can1">
+                    .....
+                </canvas>
+                <div class="kaishiyouxi">
+                    开始游戏
+                </div>
+                <div class="biaoti1"></div>
+            </div>
+            <div class="biaoti"></div>
+            <div class="zhezhaoda">
+                <div class="guanbi">x</div>
+                <a class="xiazai">下載棋譜</a>
+            </div>
+            <!--<img src="img/biao.png" alt="" id="zhongbiao" />-->
+            <div id="right">
+                <div class="right_top">
+                    <canvas id="canvas_shizhong" width="200" height="200">
+                        .....
+                    </canvas>
+                </div>
+                <div class="kaishi qi">开始</div>
+                <div class="next">再来一局</div>
+                <div class="moshi">人-人</div>
+                <div class="chakanqipu">查看棋譜</div>
+                <div class="jieshu">结束</div>
+            </div>
+            
+            <div id="left">
+                <div class="log"></div>
+                <div class="heizi">黑方</div>
+                <div class="shijian">0</div>
+                <div class="baizi">白方</div>
+                <div class="shijian1">0</div>
+            </div>
+	    </div>
+	   
+	</body>
+	<!--<script>
+	    
+        var i=0;
+        function dawnQipai(){
+            ctx.beginPath();
+            for(var i=0;i<15;i++){
+                ctx.moveTo(15.5,15.5 + i*30);
+                ctx.lineTo(435.5,15.5 + i*30);
+                ctx.moveTo(15.5+ i*30,15.5);
+                ctx.lineTo(15.5+ i*30,435.5);
+            }
+            ctx.stroke();
+            ctx.closePath();
+        }
+        function dawnyuan(){
+            ctx.beginPath();
+            ctx.arc(7.5*30,7.5*30,4.5,0,Math.PI/180*i);
+            ctx.lineTo(7.5*30,7.5*30)
+            ctx.closePath();
+            ctx.fill()
+        }
+        function dawnyuan1(){
+            ctx.beginPath();
+            ctx.arc(3.5*30,3.5*30,4.5,0,-Math.PI/180*i,true);
+            ctx.lineTo(3.5*30,3.5*30)
+            ctx.closePath();
+            ctx.fill();  
+        }
+        function dawnyuan2(){
+            ctx.beginPath();
+            ctx.arc(11.5*30,3.5*30,4.5,0,-Math.PI/180*i,true);
+            ctx.lineTo(11.5*30,3.5*30)
+            ctx.closePath();
+            ctx.fill();  
+        }
+        function dawnyuan3(){
+            ctx.beginPath();
+            ctx.arc(3.5*30,11.5*30,4.5,0,-Math.PI/180*i,true);
+            ctx.lineTo(3.5*30,11.5*30)
+            ctx.closePath();
+            ctx.fill();  
+        }
+        function dawnyuan4(){
+            ctx.beginPath();
+            ctx.arc(11.5*30,11.5*30,4.5,0,-Math.PI/180*i,true);
+            ctx.lineTo(11.5*30,11.5*30)
+            ctx.closePath();
+            ctx.fill();  
+        }
+        var t=setInterval(function(){
+            ctx.clearRect(0,0,450,450);
+            dawnQipai();
+            dawnyuan();
+            dawnyuan1();
+            dawnyuan2();
+            dawnyuan3();
+            dawnyuan4();
+            if(i===360){
+                clearInterval(t);    
+            }
+            i+=1;
+            ctx.stroke();
+        },10)
+
+	</script>-->
+</html>
