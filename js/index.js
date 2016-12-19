@@ -1,22 +1,22 @@
 $(function(){
-    var canvas=$("#canvas").get(0);
-    var ctx=canvas.getContext("2d");
-    var shizhong=$("#canvas_shizhong").get(0);
-    var ctx1=shizhong.getContext("2d");
-    var audio=$("#audio").get(0);
-    var audio1=$("#audio1").get(0);
-    var gameState="puse";
-    var kaiguan=true;
-    var AI=false;
-    var panduan={};
-    var kongbai={};
-    var spe=40;
-    var sr=4;
-    var br=18;
-    var i=0;
-    var a=0;
-    var b=0;
-    var t;
+    var canvas=$("#canvas").get(0),
+        ctx=canvas.getContext("2d"),
+        shizhong=$("#canvas_shizhong").get(0),
+        ctx1=shizhong.getContext("2d"),
+        audio=$("#audio").get(0),
+        audio1=$("#audio1").get(0),
+        gameState="puse",
+        kaiguan=true,
+        AI=false,
+        panduan={},
+        kongbai={},
+        spe=40,
+        sr=4,
+        br=18,
+        i=0,
+        a=0,
+        b=0,
+        t;
     
     function l(x){
         return (x+0.5)*spe+0.5;
